@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공차</title>
+    <!-- 상단탭 아이콘 -->
+    <link rel="icon" href="../project/공차_files/favicon.ico" >
+
+</head>
+
+<body>
+            <!-- 메인메뉴 -->
+            <div id="mainMenu" >
+                <ul>
+                    <li style="width: 100px; position: relative; top: -5px; left: 270px; ">
+                        <a href="C:\webstudyB\project\main.html" name="logo">
+                        <img src="../project/공차_files/logo.png" alt="gongchalogo" id="gongchalogo" >
+        
+                        </a>
+                    </li>
+                    <li id="Brand" style="left: 280px;"> 
+                        <!-- 마우스 오버 시 영어 -> 한글 변경 -->
+                        <a href="#" onMouseOver='this.innerHTML="브랜드"' onMouseOut='this.innerHTML="Brand"'> Brand </a>
+                    </li>
+                    <li id="Menu" style="left: 290px;"> 
+                        <a href="#" onMouseOver='this.innerHTML="메뉴"' onMouseOut='this.innerHTML="Menu"'> Menu </a>
+                    </li>
+                    <li id="Store" style="left: 300px;"> 
+                        <a href="#" onMouseOver='this.innerHTML="매장"' onMouseOut='this.innerHTML="Store"'> Store </a>
+                    </li>
+                    <li id="Membership" style="left: 310px;"> 
+                        <a href="#" onMouseOver='this.innerHTML="멤버십"' onMouseOut='this.innerHTML="Membership"'> Membership </a>
+                    </li>
+                    <li id="Benefit"style="left: 320px;"> 
+                        <a href="#" onMouseOver='this.innerHTML="제휴 서비스"' onMouseOut='this.innerHTML="Benefit"'> Benefit </a>
+                    </li>
+                    <li id="EventNews" style="left: 330px;" > 
+                        <a href="#" onMouseOver='this.innerHTML="이벤트&뉴스"' onMouseOut='this.innerHTML="Event&News"'> Event&News</a>
+                    </li> 
+                    <li id="공지사항" style="left: 340px;" >
+                        <a href="C:\kimdaeun\CSS\project\sub.html"target="_blank">
+                        <p href="#" onMouseover="this.style" > 공지사항</p>
+                    </a>
+                    </li>
+                    <li id="facebook" style="left: 320px;">
+                        <a href= "https://www.facebook.com/GongCha.Korea" target="_blank">
+                            <img src="../project/공차_files/facebook.png" style="width: 20px; height: 20px;"></img>
+                        </a>
+                    </li>
+                    <li id="instagram" style="left: 320px;">
+                        <a href="https://www.instagram.com/gongcha.official/?hl=ko" target="_blank">
+                            <img src="../project/공차_files/instagram.png" style="width: 20px; height: 20px;"></img>
+                        </a>
+                    </li>
+                    <li id="kakao" style="left: 320px;">
+                        <a href="https://pf.kakao.com/_Cywfxb" target="_blank">
+                            <img src="../project/공차_files/kakao1.png" style="width: 20px; height: 20px;"></img>
+                        </a>
+                    </li>
+                    <li class="bar"></li>
+                </ul>
+            </div>
+<!-- 공지사항 배경 -->
+<div class=" subbackground">
+    <div id=" background_img" style=" margin-top: 10px;">
+        <img src="../project/공차_files/backimg.jpg">
+    </div>
+</div>
+
+<!-- 공지사항 배경 탭 -->
+<div class="subtab">
+    <div class="tablist">
+        <div class="backcolor">
+        </div>
+        <div class="list1">
+            <a href="https://www.gong-cha.co.kr/brand/">
+                <img src="../project/공차_files/location_brand_home.png">
+            </a>
+        </div>
+        <div class="list2">
+            <a href="https://www.gong-cha.co.kr/brand/board/event.php">
+                <p style="color: rgb(225, 163, 163)";> 이벤트&뉴스 ></p>
+                </a>
+        </div>
+        <div class="list3">
+            <p>뉴스</p>
+        </div>
+    </div>
+</div>
+
+<!-- 이벤트&뉴스  -->
+<div id="container">
+    <div id="pageTop"></div>
+    <div id="contents">
+        <div class="tab_style1 mb70">
+            <ul>
+                <li>
+                    <a href="https://www.gong-cha.co.kr/brand/board/notice.php?c=NOTICE">공지사항</a>
+                </li>
+                <li class="on">
+                    <a href="https://www.gong-cha.co.kr/brand/board/notice.php?c=NEWS">보도자료</a>
+                </li>
+                <li class="onred">
+                    <img src="../project/공차_files/tab_style1_arr.png">
+                </li>
+            </ul>
+        </div>
+
+<!-- 검색폼 -->
+<div class="searchtap mb60">
+    <select id='st' style="width: 280px;" >
+        <option value='all'>전체
+        </option>
+        <option value='subject'>제목</option>
+        <option value='content'>내용</option>
+    </select>
+</div>
+<div class="box" style="width: 860px;">
+<input type="text" id="sw" 
+placeholder="검색어를 입력해 주세요." value>
+<input type="submit" value="검색">
+</div>
+
+
+        <div class="txt_list_wrap">
+            <ul class="txt_list">
+                <li>
+                    <p class="date">2022년 11월 30일</p>
+                    <p class="tit">22년 12월 2일 세종,제주 공차 매장 컵보증금 시행안내</p>
+                    <a href="https://www.gong-cha.co.kr/brand/board/view.php?b=news&n=28004&page=5&c=NEWS" class="btn_detail red">자세히 보기</a>
+                </li>
+                <li>
+                    <p class="date">2022년 11월 24일</p>
+                    <p class="tit">매장 내 1회용품 사용 불가 안내</p>
+                    <a href="https://www.gong-cha.co.kr/brand/board/view.php?b=news&n=42802&page=1&c=NOTICE" class="btn_detail red">자세히 보기</a>
+                </li>
+                <li>
+                    <p class="date">2022년 04월 29일</p>
+                    <p class="tit">공차 회원 개인정보 처리방침 변경 공지</p>
+                    <a href="https://www.gong-cha.co.kr/brand/board/view.php?b=news&n=38835&page=1&c=NOTICE" class="btn_detail red">자세히 보기</a>
+                </li>
+                <li>
+                    <p class="date">2022년 03월 29일</p>
+                    <p class="tit">공차코리아, 멤버십 회원가입 연령 변경 안내</p>
+                    <a href="https://www.gong-cha.co.kr/brand/board/view.php?b=news&n=38316&page=1&c=NOTICE" class="btn_detail red">자세히 보기</a>
+                </li>
+                <li>
+                    <p class="date">2022년 12월 20일</p>
+                    <p class="tit">공차 일부 메뉴 가격 인상 안내</p>
+                    <a href="https://www.gong-cha.co.kr/brand/board/view.php?b=news&n=36368&page=1&c=NOTICE" class="btn_detail red">자세히 보기</a>
+                </li>
+                <li>
+                    <p class="date">2022년 01월 13일</p>
+                    <p class="tit">공차 음료 영양정보안내</p>
+                    <a href="https://www.gong-cha.co.kr/brand/board/view.php?b=news&n=30030&page=1&c=NOTICE" class="btn_detail red">자세히 보기</a>
+                </li>                <li>
+                    <p class="date">2019년 07월 15일</p>
+                    <p class="tit">공차 모바일 메뉴 교환권 및 금액권 이용 매장안내</p>
+                    <a href="https://www.gong-cha.co.kr/brand/board/view.php?b=news&n=18152&page=1&c=NOTICE" class="btn_detail red">자세히 보기</a>
+                </li>
+                <li>
+                    <p class="date">2021년 03월 13일</p>
+                    <p class="tit">공차 멤버십 앱 오픈 연기 안내 </p>
+                    <a href="https://www.gong-cha.co.kr/brand/board/view.php?b=news&n=30938&page=1&c=NOTICE" class="btn_detail red">자세히 보기</a>
+                </li>
+                <li>
+                    <p class="date">2022년 01월 26일</p>
+                    <p class="tit">멤버십 앱 리뉴얼 및 시스템 점검을 위한 서비스 일시 중단 안내</p>
+                    <a href="https://www.gong-cha.co.kr/brand/board/view.php?b=news&n=30241&page=1&c=NOTICE" class="btn_detail red">자세히 보기</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<!-- 게시판페이지영역 -->
+<div id="divPaging">
+    <div><img src="../project/공차_files/page_first"></div>
+    <div><img src="../project/공차_files/page_prev"></div>
+    <span class="page">
+    <div style="color: rgb(158, 11, 11); font-weight: bold;"> 1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    </span>
+    <div><img src="../project/공차_files/page_next.gif"></div>
+    <div><img src="../project/공차_files/page_last.gif"></div>
+</div>
+
+<!-- 페이징 -->
+<!-- <div class="pagination">
+    <div class="paging">
+        <a href="https://www.gong-cha.co.kr/brand/board/notice.php?c=NEWS" class="page_first">
+            <span class="hide">처음</span>
+        </a>
+        <a href="https://www.gong-cha.co.kr/brand/board/notice.php?c=NEWS" class="page_prev">
+            <span class="hide">이전</span>
+        </a>
+        <span class="page">
+            <p>1</p>
+            <a href="https://www.gong-cha.co.kr/brand/board/notice.php?c=NEWS&page=2"><span>2</span></a>
+            <a href="https://www.gong-cha.co.kr/brand/board/notice.php?c=NEWS&page=3"><span>3</span></a>
+            <a href="https://www.gong-cha.co.kr/brand/board/notice.php?c=NEWS&page=3"><span>4</span></a>
+            <a href="https://www.gong-cha.co.kr/brand/board/notice.php?c=NEWS&page=4"><span>5</span></a>
+        </span>
+        
+    </div>
+</div> -->
+
+
+<div class="subtext">
+    <div class="text1">
+        <p>NEWS</p>
+    </div>
+    <div class="text2">
+        <p>공차의 다양한 소식을 확인해 보세요.</p>
+    </div>
+</div>
+<!-- 우측 고정 탭 배너 -->
+<div id="float">
+    <ul>
+        <a href="http://www.gong-cha.co.kr/franchise/" target="_blank">
+            <img src="../project/공차_files/quick_img_off.png">
+        </a>
+   
+    </ul>
+    </div>
+
+    <!-- 하단 푸퍼 -->
+    <div class="footer">
+        <!-- <div id="footer_inner" style="background-color: aqua; width: auto; height: auto;" > -->
+            <div id="footer_left"  >
+                <img src="../project/공차_files/ft_logo.png" alt="gongcha" class="logo" style="position: relative; top: 40px; left: 420px;">
+                <p class="copyright" style="color: #B5B4B4; font-weight: normal; font-size: 12px; position: absolute; top: 100px; left: 520px;">
+                    (C)GONGCHA KOREA CO.LTD <br>
+                    ALL RIGHTS RESERVED.
+                </p>
+            </div>
+            <div id="footer_right">
+                <ul class="ft_menu"  >
+                    <li > <a href="https://www.gong-cha.co.kr/franchise/company/history.php">회사소개</a></li>
+                    <li > <a href="https://www.gong-cha.co.kr/brand/benefit/contact.php">제휴/제안</a></li>
+                    <li > <a href="https://www.gong-cha.co.kr/brand/board/customer.php">고객센터</a></li>
+                    <li > <a href="https://www.gong-cha.co.kr/franchise/company/history.php">개인정보처리방침</a></li>
+                    <li > <a href="https://www.gong-cha.co.kr/franchise/company/history.php">이메일무단수집거부</a></li>
+                    <li > <a href="https://www.gong-cha.co.kr/franchise/company/history.php">윤리규범 실천지침</a></li>
+                    <li > <a href="https://www.gong-cha.co.kr/franchise/company/history.php">HOT-LINE</a></li>
+                </ul>
+            <div class="center">
+                <div>고객센터  <span class="tell">  ☎ 02-779-7758</span></div>
+                <span class="time">
+                    운영시간 : 월요일~목요일 (오전 9시 ~ 오후 6시), 금요일 (오전 9시 ~ 오후 1시)  <br>
+                    점심시간 : 낮 12시 ~ 오후 1시 / 주말 및 공휴일 휴무
+                </span>
+            </div>
+            <address class="address">
+                <span>서울 종로구 종로 47(공평동, 7층)</span>
+                <span>㈜공차코리아 대표이사 이봉진</span>
+                <span>사업자등록번호 214-88-84534</span>
+                <span>통신판매번호: 2020-서울종로-0966</span>
+            </address>
+            </div>
+        </div>
+    
+    </footer>
+</body>
+<link type="text/css" rel="stylesheet" href="sub.css"> </link>
+</html>

@@ -1,0 +1,487 @@
+ /* 메인메뉴  */
+* {
+    list-style: none;
+    text-decoration: none;
+    margin:0;
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+    font-family: 'NanumGothic', 'dotum', 'Arial', 'sans-serif'; 
+    /* color: #585454;  */
+} 
+
+.pop_up_wrap {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    left: -460px;
+    top: -90px;
+    z-index: 10000;
+    overflow: auto;
+    }
+    .pop_up {
+    position: absolute;
+    top: 50%;left:50%;
+    transform: translate(-50%,-50%);
+    }
+    .pop_up img {
+    height: 53vh;
+    }
+    #close {
+    position: absolute;
+    cursor: pointer;
+    top: 520px;
+    right: 0;
+    font-weight: bold;
+    color: #f1ebeb;
+    }
+
+#mainMenu ul li a{
+    color: #585454;
+    font-weight: bold;
+    font-family: 'NanumGothic', 'dotum', 'Arial', 'sans-serif'; 
+} 
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden; /*좌우스크롤 없애기*/
+    /* margin-left: calc(-50vw + 50%);
+    margin: 0 auto; */
+
+    text-align: left;
+}
+#mainMenu{
+    width: 100%;
+    height: 110px;
+    background-color: rgb(254, 254, 254);
+    position: fixed;
+    z-index: 10;
+    left: 0px;
+    
+}
+#mainMenu ul {
+    display: inline-block ;
+    margin: 20px ; 
+
+}
+#mainMenu ul li {
+    left: 98px;
+    float: left;
+    height: 100%;
+    line-height: 65px;
+    text-align: center;
+    /* background-color: rgb(254, 254, 254); */
+    position: relative;
+
+}
+#Brand{
+    top: 3px;
+    width: 100px;
+    font-size: 16px;
+    letter-spacing: 1px; /*글자사이간격*/
+}
+#Menu{
+    top: 3px;
+    width: 113px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: rgb(254, 254, 254)
+}
+#Store{
+    top: 3px;
+    width: 98px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: rgb(254, 254, 254)
+}
+#Membership{
+    top: 3px; 
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 160px;
+    background-color: rgb(254, 254, 254)
+}
+#Benefit{
+    top: 3px;
+    font-size: 16px;
+    width: 120px;
+    letter-spacing: 1px;
+    background-color: rgb(254, 254, 254)
+}
+#EventNews{
+    top: 3px;
+    width: 148px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: rgb(254, 254, 254)
+}
+#공지사항{
+    top: 3px;
+    font-size: 13px;
+    width: 120px;
+}
+/* 공지사항 마우스 오버 시 컬러변경 */
+p:hover{
+    color: red;
+}
+
+#facebook{
+    top: 7px;
+
+    width: 60px;
+}
+#instagram{
+    
+    top: 7px;
+    width: 60px;
+}
+#kakao{
+    top: 7px;
+    width: 60px;
+}
+
+
+/* 드롭메뉴
+#mainMenu > li.a span{position: relative;}
+#mainMenu > li.a span:after{
+content: " ";
+position: absolute; left: 0; bottom: -10px;
+width: 0%;
+height: 2px;
+background: #f00;
+transition: all .5s;
+}
+#mainMenu > li:hover span:after{width: 100%;left:0;}
+nav > ul > li ul {width: 100%;} */
+
+/* 드롭메뉴
+.dropmenu{
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top:100%;
+    z-index: 999;
+    padding-left: 180px;
+    font-size: 15px;
+    display: none;
+}
+.fullcategory{
+    float: left;
+    margin: 30px 0;
+}
+.category:nth-child(1){
+    font-weight: bold;
+}
+.category {
+    padding: 9px 0px;
+    /* width: 180px; */
+    /* margin-right: 100px; */
+
+/* .category:hover {
+    text-decoration: underline;
+} */ 
+
+
+/* 슬라이드배너 */
+
+.outer {
+    width:2560px;
+    left: -600px;
+    top: 100px;
+    height: 850px;
+    margin: 0 auto;
+    overflow:hidden;
+    overflow: clip();
+    position: relative;
+} 
+
+.inner-list {
+    display: flex;
+    transition: .3s ease-out;
+    height: 100%;
+}
+.inner {
+    padding: 0px;
+}
+.button-list {
+    text-align: center;
+}
+/* 우측고정탭 */
+#float { 
+    position:fixed; _position:absolute; _z-index:-1;
+    width:170px;
+    overflow:hidden;
+    right: -22px;
+    top:144px; 
+    background-color: transparent;
+    margin:0;
+    padding:0;
+}
+/* 
+#floatdiv ul  { list-style: none; }
+#floatdiv li  { margin-bottom: 2px; text-align: center; }
+#floatdiv a   { color: #5D5D5D; border: 0; text-decoration: none; display: block; }
+#floatdiv a:hover, #floatdiv .menu  { background-color: #5D5D5D; color: #fff; }
+#floatdiv .menu, #floatdiv .last    { margin-bottom: 0px; } */
+
+/* #sub .sub-list a img {
+    
+    left: 300px;
+} */
+
+/* 서브 메뉴 */
+#brandMain .main_contents .section1 a img {
+    margin-left: 130px;
+    margin-top: 100px;
+    width: 800px;
+    height: 386px;
+}
+#brandMain .main_contents .section2 a img {
+    margin-left: 930px;
+    margin-top: -500px;
+    width: 400px;
+    height: 407px;
+   }
+   #brandMain .main_contents .section3 a img {
+    width: 400px;
+    height: 500px;
+    margin-left: 130px;
+    margin-top: -20px;
+   }
+   #brandMain .main_contents .section4 a img {
+    width: 800px;
+    height: 500px;
+    margin-left: 530px;
+    margin-top: -550px;
+   }
+   #brandMain .main_contents .section5 a img {
+    width: 400px;
+    height: 450px;
+    margin-left: 130px;
+    margin-top: -7px;
+   }
+   #brandMain .main_contents .section6 a img {
+    width: 400px;
+    height: 450px;
+    margin-left: 530px;
+    margin-top: -550px;
+
+   }
+   #brandMain .main_contents .section7 a img {
+    width: 400px;
+    height: 450px;
+    margin-left: 930px;
+    margin-top: -550px;
+   }
+
+/* 티 레시피 */
+.teamain .box {
+    background-color:#F5EEE8;
+    width: 2000px;
+    height: 350px;
+    padding: 60px;
+    border: 3px solid #F5EEE8;
+    margin: 10;
+    margin-top: -390px;
+}
+#gongchaRecipe {
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 360px;
+    font-weight: 700;
+    font-size: 24px;
+    float: left;
+    color: #222222;
+}
+#teaRecipe{
+    font-weight: 700;
+    font-size: 36px;
+    color: #333333;
+    margin: 0 0 15px;
+    line-height: 1;
+    position: relative;
+    top: 150px;
+    left: 400px;
+}
+#Original{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    margin: 0 0 20px;
+    margin-top: 170px;
+    margin-left: 928px;
+    position: relative;
+    color: #993B42;
+}
+#ex{
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 0 25px;
+    margin-top: 25px;
+    margin-left: 928px;
+    position: relative;
+    font-weight: lighter;
+
+}
+#teaRecipe #recipe1 img {
+ width: 600px;
+ height: 255px;
+ margin-top: -40px;
+ position: absolute;
+}
+.meungoing .btn {
+    display: inline-block;
+    width: 145px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid #993b42;
+    text-align: center;
+    position: relative;
+    left: 928px;
+}
+.meungoing .btn span {
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 33px;
+    color: #993b42;
+}
+/* 하단푸퍼 */
+/* #footer .inner{
+    height: -300px;
+    /* height: 100px; */
+    /* position: relative; */
+    /* transform: translateY(-100%); 
+} */
+.footer{
+
+    width: 665px;
+    height: 0px;
+}
+#footer_left{
+    width: 1000px;
+    height: 165px;
+    float: 1eft;
+    position: relative;
+    background: #575757;
+}
+
+/* 오른쪽박스 */
+#footer_right {
+    top: -165px;
+    left: 750px;
+    width: 1300px;
+    height: 166px;
+    /* float: left; */
+    position: relative;
+    background: #f1f2f2;
+}
+#footer_right .ft_menu ul {
+
+    list-style: none;
+    top: 36px;
+    left: 25px;
+}
+/* 회사소개 제휴/제안 */
+.ft_menu li {
+    margin: 0 0 0 41px;
+    float: left;
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+    left: -40px;
+    color: #444444;
+}
+#footer_right .ft_menu li a {
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    color: #444444;
+    line-height: 21px;
+}
+/* 하단푸퍼 고객센터 */
+#footer_right .center {
+
+    display: flex;
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    color: #666666;
+}
+
+/* 하단푸퍼 전화번호 */
+#footer_right .center .tell {
+
+    margin-top: 300px;
+    /* display: inline-block; */
+    padding: 0 0 0 18px;
+    margin: 0 0 0 10px;
+    color: #666666;
+}
+/* 하단푸퍼 운영시간 */
+#footer_right .center .time {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+    font-weight: lighter;
+}
+
+/* 하단푸퍼 주소,대표,사업자,판매번호 */
+#footer_right .address{
+    float: left;  
+}
+#footer_right .address span {
+    top: 110px;
+    left: 5px;
+    display: block;
+    float: left; 
+    margin: 0 0 0 31px;
+    font-size: 13px;
+    color: #666666;
+    position: relative;
+    font-weight: lighter;
+}
+/* ul, ol, li {
+    list-style: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+} */
+/* ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+} */
+/* body {
+    width: 100%;
+    height: 800px;
+    /* height: 100%; */
+    /* font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666666;
+    -webkit-font-smoothing: antialiased; */
+    /* font-smoothing: antialiased; */
+    /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%; */
+/* } */
+/* ::selection {
+    background: #983b43;
+    color: #ffffff; */
+/* }  */
