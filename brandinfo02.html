@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브랜드 소개</title>
+    <style>
+
+        /* 전체 바디 규격 */
+        body{
+    max-width: 1200px;
+    padding-left: 18%;   
+    
+}
+
+/* 브랜드소개 스타일 */
+.brandinfo{
+    text-align: center
+}
+.inforedtext{
+    color: #983b43;
+}
+
+
+        /* 이미지 회전 */
+        .a{
+            width: 200px;
+                height: 200px;
+                transition: 1s;
+        }
+        .a:hover{
+                transform: rotate( 45deg );
+            }
+
+       /* ul li 의 양식 지정  */
+    ul li{
+        
+       list-style-type:none;
+       float: left;
+       margin-left: 100px;
+      text-align: center;
+      
+      
+       }
+
+       /* 이미지 하단 글자 스타일 적용 */
+       /* !!!!!!!!!!!! 이거 마진 적용해서 글씨 위아래 간격 좁혀야겠따 */
+       .name{
+        color: #983b43; 
+        font-size: x-large;
+        text-align: center;
+       }
+       .text1{
+        color: black; 
+        font-size: large;
+        text-align: center;
+       }
+       .text2{
+        color: darkgrey; 
+        font-size: medium;
+        text-align: center;
+       }
+
+       /* 하단 배너 스타일 */
+       .bottombanner{
+        text-align: center;
+       }
+       
+
+    </style>
+</head>
+<body>
+    1. 일단 구조 짜고V
+    2. 이미지같은거 하나씩만 넣고V
+    3. 기능적용V
+    4. 위치잡기
+    <header>맨 위 메뉴
+
+    </header>
+
+    <article>브랜드소개
+<div class="brandinfo">
+    <h2>황실에 바치는 차(茶), 공차를 소개합니다.</h2>
+    <p>
+        貢茶는 바칠 공, 차 차의 뜻으로 중국 황실에서만 맛 볼 수 있던 프리미엄 퀄리티의 차(茶)를 <br>
+        바친다는 의미를 지니고 있습니다. 대만은 차나무가 자라기에 최적의 기온과 기상조건을 가지고 있어 <br>
+        중국의 황실에 최고급 차 잎을 생산해낼 수 있었습니다.
+    </p>
+    <p class="inforedtext">중국 황실에 진상하던 대만의 프리미엄 잎차를 신선하게 우려낸 차, 그것이 바로 공차랍니다.</p>
+
+</div>
+
+    </article>
+    
+    <article>동영상 첨부
+        <div > <!--컨테이너 뭐임?-->
+            <iframe style="padding-left: 100px; padding-top: 20px;" width="1100" height="550" src="https://www.youtube.com/embed/peg8c6Gn-zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </article>
+    
+    <article>소개
+        <!-- 이미지 묶음 순서없는 목록 묶음 ul /////이거 div로 윗줄 아랫줄 구분 넣어야하나-->
+        <ul >
+            <!--이미지 3개 -->
+            <li>
+            <li>
+                <img class="a" src="../brand_story_img1.png">
+                <p class="name">영어영어영어</p>
+                <p class="text1"> 설명1 </p>
+                <p class="text2">설명2</p>
+            </li>
+            <li>
+                <img class="a" src="../brand_story_img2.png">
+                <p class="name">영어영어영어</p>
+                <p class="text1"> 설명1 </p>
+                <p class="text2">설명2</p>
+            </li>
+            <li>
+                <img class="a" src="../brand_story_img3.png">
+                <p class="name">영어영어영어</p>
+                <p class="text1"> 설명1 </p>
+                <p class="text2">설명2</p>
+            
+            </li> 
+        </li>
+        <!--이미지 2개 -->
+          <li>
+          <img class="a" src="../brand_story_img4.png">
+          <img class="a" src="../brand_story_img5.png">
+        </li>
+        </ul>
+    </article>
+    <article>
+        하단배너
+        <img class="bottombanner" src="../Image/banner.jpg">
+    </article>
+    
+    <footer>각종 법령
+
+    </footer>
+
+</body>
+</html>

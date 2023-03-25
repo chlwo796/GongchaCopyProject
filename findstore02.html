@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 바디쓰면 안될듯 이거 묶어서 헤더랑 따로 해야할듯... */
+        body{
+            max-width: 80%;
+            text-align: center;
+        }
+        /* 검색박스 */
+        .box{
+            background-color: #bbb;
+            display: flex;
+            height: 80px;
+            /* padding-left: 18%; */
+            
+ 
+        }
+        .selectbox{
+            width: 200px;
+            height: 45px;
+            margin: 5px 30px 5px 10px;
+            border-radius: 8px;
+           margin-right: 50px;
+           margin-top: 15px;
+            /* float: left; */
+        }
+        .inputbox{
+            position: relative;
+    width: 400px; 
+    /* float: right; */
+    /* right: 100px; */
+             width: 400px;
+            height: 40px;
+            margin: 5px 30px 5px 10px;
+            border-radius: 8px;
+            margin-left: 100px;
+            margin-top: 15px;
+            
+        }
+        
+        /* 리스트 */
+       
+        .list{
+           float: left;
+           width: 15%;
+          margin-top: 1%;
+          margin-left: 0.5%;
+          overflow: scroll;
+          height: 620px;
+            /* max-width: 300px; */
+        }
+        /* 아래의 모든 코드는 영역::코드로 사용 */
+.list::-webkit-scrollbar {
+    width: 5px;  /* 스크롤바의 너비 */
+}
+
+.list::-webkit-scrollbar-thumb {
+    height: 5%; /* 스크롤바의 길이 */
+    background: #555; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+.list::-webkit-scrollbar-track {
+    background: #bbb;  /*스크롤바 뒷 배경 색상*/
+}
+        .list button {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    /* padding: 5px; */
+   
+    width: 100%;
+    height: 100px;
+}
+.list button:focus {
+    color: gainsboro;
+    background-color: gray;
+}
+        .store1{
+            /* margin-right: -4px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+        }
+        .store0{
+            /* margin-right: -4px; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+        }
+        .placeAddress{
+            font-size: small;
+        }
+
+        
+        /* 지도 */
+        .map{
+            float: right;
+           width: 82%;
+            /* height: 600px; */
+            margin-right: 1%;
+            margin-top: 1%;
+          
+        }
+
+    </style>
+</head>
+<body>
+    1.구조잡기
+    2.위치잡기
+    3.기능적용
+    <header>
+
+    </header>
+    
+        검색
+        <!-- 회색 네모 -->
+        <form class="box">
+            <div class="cityselect">
+            <select class="selectbox" onchange="cityCategoryChange(this)">시/도
+                <option value>시/도 선택</option>
+                <option value="city01">도시1</option>
+                <option value="city02">도시2</option>
+                <option value="city03">도시3</option>
+                <option value="city04">도시4</option>
+            </select>
+
+            <select class="selectbox" id="city" >군/구
+                 <option>군/구 선택</option>
+                </select>
+        </div>
+            <input class="inputbox"> 
+        </form>
+   
+
+
+    <div class="middle">
+        <div class="list">
+            <button id="TEST">test</button>
+            <button id="store1" >서울특별시청
+                <p class="placeAddress">서울특별시 중구 세종대로 110</p>
+            </button>
+            <button id="store2">하남시청
+                <p class="placeAddress">경기도 하남시 대청로 10</p>
+            </button>
+            <button class="store3">매장 1</button>
+            <button class="store4">매장 1</button>
+            <button class="store5">매장 1</button>
+            <button class="store6">매장 1</button>
+            <button class="store0">매장 1</button>
+        </div>
+        <!-- 매장리스트 5개씩 보이기 
+        스크롤 기능 추가-->
+    </div>
+    
+        <!--지도 보여줄 위치-->
+        <div id="map" style="height: 600px;"></div>
+    
+    <footer>
+
+    </footer>
+</body>
+
+
+
+<!--구글 Maps API 스크립트 불러오기/ !!!!!!!!키번호 챙겨-->
+<script defer src="./findstore02.js"></script>
+<script
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=MY_KEY&callback=initMap"
+></script>
+<!-- <script>
+var t=document.getElementById('store1');
+t.addEventListener('click',function(event){
+    onclick.malls[0];
+}); -->
+
+</script>
+</html>
