@@ -1,5 +1,6 @@
 
         /* 전체 바디 규격 */
+<<<<<<< HEAD
         header{
             height: 110px;
             background-color: #f0edeb;
@@ -11,6 +12,14 @@
             height: 90%;
           margin: 0;
           background: linear-gradient(#d4b5a0 30%, #ffffff 50%);
+=======
+        body{
+            /* max-width: 1200px; */
+            /* padding-left: 18%;    */
+            height: 80%;
+          margin: 0;
+          background: linear-gradient(#f0edeb 30%, #ffffff 50%);
+>>>>>>> b467d187cf191602aa1fd0bf6d0d2be107545f0c
             
         }
         /* 배경색 반 나누기 */
@@ -39,7 +48,11 @@
             font-size: 40px;
             color: #ffffff;
             position: absolute;
+<<<<<<< HEAD
             top: 170px;
+=======
+            top: 90px;
+>>>>>>> b467d187cf191602aa1fd0bf6d0d2be107545f0c
             left: 50%;
             margin: 0 0 0 -600px;
             font-style: 'NanumGothic', 'dotum', 'Arial', 'sans-serif';
@@ -49,7 +62,11 @@
             font-size: 17px;
             color: #ffffff;
             position: absolute;
+<<<<<<< HEAD
             top: 234px;
+=======
+            top: 154px;
+>>>>>>> b467d187cf191602aa1fd0bf6d0d2be107545f0c
             left: 50%;
             margin: 0 0 0 -600px;
         }
@@ -63,7 +80,11 @@
             box-sizing: border-box;
             position: absolute;
             top: 255px;
+<<<<<<< HEAD
             left: 1200px;
+=======
+            left: 1000px;
+>>>>>>> b467d187cf191602aa1fd0bf6d0d2be107545f0c
             bottom: -18px;
             z-index: 100;
             /* margin: 0 -600px 0 0; */
@@ -74,14 +95,22 @@
             z-index: 100;
             position: absolute;
             top: 262px;
+<<<<<<< HEAD
             left: 1220px;
+=======
+            left: 1020px;
+>>>>>>> b467d187cf191602aa1fd0bf6d0d2be107545f0c
         }
         
         .subtab .tablist .list2{
             z-index: 100;
             position: absolute;
             top: 250px;
+<<<<<<< HEAD
             left: 1240px;
+=======
+            left: 1040px;
+>>>>>>> b467d187cf191602aa1fd0bf6d0d2be107545f0c
             font-size: 15px;
             
         }
@@ -89,7 +118,11 @@
             z-index: 100;
             position: absolute;
             top: 250px;
+<<<<<<< HEAD
             left: 1325px;
+=======
+            left: 1125px;
+>>>>>>> b467d187cf191602aa1fd0bf6d0d2be107545f0c
             font-size: 14px;
             font-weight: bold;
             color: #f1f2f2;
@@ -146,7 +179,11 @@
                }
             ul li{
                 position: relative;
+<<<<<<< HEAD
                 left: 35%;
+=======
+                left: 15%;
+>>>>>>> b467d187cf191602aa1fd0bf6d0d2be107545f0c
                 right: 15%;
                 list-style-type:none;
                float: left;
@@ -185,6 +222,7 @@
                /* 하단 배너 스타일 */
                .bottombanner{
                 text-align: center;
+<<<<<<< HEAD
                 padding-left: 25%;
                }
         
@@ -291,3 +329,109 @@
     position: relative;
     font-weight: lighter;
 }
+=======
+                padding-left: 15%;
+               }
+        
+               /* 하단푸퍼 */
+        .footer{
+/*         
+        width: 665px;
+        height: 0px; */
+        }
+        #footer_left{
+        width: 400px;
+        height: 165px;
+        float: left;
+        position: relative;
+        background: #575757;
+        top: 40px; 
+       
+        }
+        
+        /* 오른쪽박스 */
+        #footer_right {
+        /* top: 40x;
+        left: 400px; */
+        width: 1300px;
+        height: 165px;
+        float: left;
+        position: relative;
+        background: #f1f2f2;
+        }
+        #footer_right .ft_menu ul {
+        
+        list-style: none;
+        top: 36px;
+        left: 25px;
+        }
+        /* 회사소개 제휴/제안 */
+        .ft_menu li {
+        margin: 0 0 0 41px;
+        float: left;
+        position: relative;
+        font-size: 15px;
+        top: 30px;
+        left: -40px;
+        color: #444444;
+        }
+        #footer_right .ft_menu li a {
+        display: block;
+        font-weight: 700;
+        font-size: 15px;
+        color: #444444;
+        line-height: 21px;
+        }
+        /* 하단푸퍼 고객센터 */
+        #footer_right .center {
+        
+        display: flex;
+        align-items: flex-start;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 22px;
+        position: absolute;
+        top: 80px;
+        left: 40px;
+        color: #666666;
+        }
+        
+        /* 하단푸퍼 전화번호 */
+        #footer_right .center .tell {
+        
+        margin-top: 300px;
+        /* display: inline-block; */
+        padding: 0 0 0 18px;
+        margin: 0 0 0 10px;
+        color: #666666;
+        }
+        /* 하단푸퍼 운영시간 */
+        #footer_right .center .time {
+        display: inline-block;
+        margin: 0 0 0 10px;
+        margin-top: 0px;
+        margin-left: 20px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22px;
+        color: #666666;
+        font-weight: lighter;
+        }
+        
+        /* 하단푸퍼 주소,대표,사업자,판매번호 */
+        #footer_right .address{
+        float: left;  
+        }
+        #footer_right .address span {
+        top: 110px;
+        left: 5px;
+        display: block;
+        float: left; 
+        margin: 0 0 0 31px;
+        font-size: 13px;
+        color: #666666;
+        position: relative;
+        font-weight: lighter;
+        }
+        
+>>>>>>> b467d187cf191602aa1fd0bf6d0d2be107545f0c
