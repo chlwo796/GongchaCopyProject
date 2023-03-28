@@ -1,0 +1,107 @@
+@font-face {
+  font-family: gothic400;
+  src: url(view/common/font/NanumGothic-Regular.ttf);
+}
+@font-face {
+  font-family: gothic700;
+  src: url(view/common/font/NanumGothic-Bold.ttf);
+}
+@font-face {
+  font-family: gothic800;
+  src: url(view/common/font/NanumGothic-ExtraBold.ttf);
+} /* 폰트들 링크 걸고 이름 임의로 정의*/
+
+body {
+  font-family: gothic400;
+} /* 전체 기본 글씨체 설정*/
+li {
+  list-style: none;
+} /* li태그 전체 점 빼기*/
+#header {
+  width: 100%;
+  position: fixed; /*헤더 위치 고정*/
+  margin: 0;
+  float: left;
+  background-color: #ffffff;
+  z-index: 2; /* HowToOrder이랑 안겹치게 만들어야함 */
+}
+.header_logo,
+.header_text,
+.header_sns {
+  display: inline-block;
+} /* 한 줄로 들여쓰기*/
+
+.HowToOrder_text {
+  font-family: gothic700;
+  padding-top: 100px;
+  padding-left: 18%;
+  position: absolute; /*자식 요소*/
+  z-index: 1; /*우선 순위*/
+}
+.HowToOrder_text .title {
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.HowToOrder_text .exp {
+  font-size: 17px;
+  color: #ffffff;
+}
+.HowToOrder_img {
+  position: relative; /*부모 요소*/
+  display: flex; /*이미지 중앙정렬 1*/
+  justify-content: center; /*이미지 중앙정렬 2*/
+  overflow: hidden; /*화면에 넘치는부분 가리기*/
+}
+
+#FirstVisitGongcha {
+  background-color: #e4dcd2;
+}
+.step {
+  color: #983b43;
+  margin-bottom: 5px;
+  font-family: gothic700;
+  font-size: 20px;
+} /* step들 스타일 변경*/
+.title {
+  color: #222222;
+  margin: 0px 0px 26px;
+  font-family: gothic700;
+  font-size: 42px;
+}
+.txt {
+  color: #666666;
+  font-size: 16px;
+}
+.step1_left,
+.step1_right {
+  display: inline-block;
+}
+
+.step2_left,
+.step2_right {
+  display: inline-block;
+}
+
+.step2 {
+  position: relative; /*부모 요소*/
+  display: flex; /*이미지 중앙정렬 1*/
+  justify-content: center; /*이미지 중앙정렬 2*/
+  overflow: hidden; /*화면에 넘치는부분 가리기*/
+}
+.step2_content {
+  position: absolute; /*자식 요소*/
+  z-index: 1; /*우선 순위*/
+}
+
+.step3_left,
+.step3_right {
+  display: inline-block;
+}
+
+.footer_left,
+.footer_right,
+.footer_logo,
+.copyright {
+  display: inline-block;
+}
