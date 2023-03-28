@@ -6,8 +6,8 @@
   margin: 0;
   padding: 0;
   font-family: "NanumGothic", "dotum", "Arial", "sans-serif";
-  text-decoration: none;
   list-style: none;
+  text-decoration: none;
 }
 body {
   width: 100%;
@@ -39,6 +39,10 @@ body {
 .header ul {
   text-align: center;
   font-weight: 600;
+  /* color: #444444; */
+}
+.header ul a {
+  color: #444444;
 }
 .header ul li {
   font-size: 15px;
@@ -113,14 +117,15 @@ body {
 .main_contents #container1 {
   width: 350px;
   height: 500px;
-  background-color: rgba(232, 164, 167, 0.9);
+  background-color: rgba(193, 30, 57, 0.9);
   margin: -250px 0 0 400px;
+  color: #ffffff;
 }
 .main_contents #container1 #title1 {
   font-size: 30px;
   font-weight: bold;
   padding-left: 50px;
-  padding-top: 40px;
+  padding-top: 50px;
   text-align: left;
   line-height: 1.5;
 }
@@ -133,148 +138,196 @@ body {
   font-size: 15px;
 }
 .main_contents #container2 {
-  background-color: blue;
+  background-color: rgba(255, 255, 255, 0.9);
   margin: -253px 750px auto;
 }
 .main_contents #container2 #title2 {
   font-size: 25px;
   font-weight: bold;
   padding-left: 30px;
-  padding-top: 20px;
+  padding-top: 40px;
   text-align: left;
   line-height: 1.5;
+  color: #222222;
 }
 .main_contents #container2 p {
+  color: #444444;
   position: relative;
   padding-left: 30px;
   padding-top: 20px;
   text-align: left;
-  line-height: 1.7;
-  font-size: 15px;
+  line-height: 1.5;
+  font-size: 14px;
 }
 .main_contents #container2 #option2 {
-  padding-top: 40px;
+  font-size: 13px;
+  display: inline-block;
+  padding: -40px 10px 10px -10px;
   text-decoration-line: underline;
+  color: #222222;
+  line-height: 50px;
+  text-underline-offset: 3px;
+  font-weight: bold;
 }
 .main_contents #container3 {
-  background-color: red;
+  background-color: rgba(239, 239, 239, 0.9);
   margin: -253px 1050px auto;
 }
 .main_contents #container3 #title3 {
   font-size: 25px;
   font-weight: bold;
   padding-left: 30px;
-  padding-top: 20px;
+  padding-top: 40px;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.2;
+  color: #222222;
 }
 .main_contents #container3 p {
+  color: #444444;
   position: relative;
   padding-left: 30px;
   padding-top: 20px;
   text-align: left;
-  line-height: 1.7;
-  font-size: 15px;
+  line-height: 1.5;
+  font-size: 14px;
 }
 .main_contents #container3 #option3 {
-  padding-top: 40px;
+  font-size: 13px;
+  display: inline-block;
+  padding: -40px 10px 10px -10px;
   text-decoration-line: underline;
+  color: #222222;
+  line-height: 50px;
+  text-underline-offset: 3px;
+  font-weight: bold;
 }
 .main_contents #container4 {
-  background-color: green;
+  background-color: rgba(230, 223, 217, 0.9);
   margin: -253px 1350px auto;
 }
 .main_contents #container4 #title4 {
+  color: #222222;
   font-size: 25px;
   font-weight: bold;
   padding-left: 30px;
-  padding-top: 20px;
+  padding-top: 40px;
   text-align: left;
   line-height: 1.5;
 }
 .main_contents #container4 p {
+  color: #444444;
   position: relative;
   padding-left: 30px;
   padding-top: 20px;
   text-align: left;
-  line-height: 1.7;
-  font-size: 15px;
+  line-height: 1.5;
+  font-size: 14px;
 }
 .main_contents #container4 #option4 {
-  padding-top: 40px;
+  font-size: 13px;
+  display: inline-block;
+  padding: -40px 10px 10px -10px;
   text-decoration-line: underline;
+  color: #222222;
+  line-height: 50px;
+  text-underline-offset: 3px;
+  font-weight: bold;
 }
 .main_contents #container5 {
-  background-color: yellow;
+  background-color: rgba(239, 239, 239, 0.9);
   margin: -3px 750px auto;
 }
 .main_contents #container5 #title5 {
+  color: #222222;
   font-size: 25px;
   font-weight: bold;
   padding-left: 30px;
-  padding-top: 20px;
+  padding-top: 40px;
   text-align: left;
   line-height: 1.5;
 }
 .main_contents #container5 p {
+  color: #444444;
   position: relative;
   padding-left: 30px;
   padding-top: 20px;
   text-align: left;
-  line-height: 1.7;
-  font-size: 15px;
+  line-height: 1.5;
+  font-size: 14px;
 }
 .main_contents #container5 #option5 {
-  padding-top: 40px;
+  font-size: 13px;
+  display: inline-block;
+  padding: 0px 0px 30px 30px;
   text-decoration-line: underline;
+  color: #222222;
+  line-height: 50px;
+  text-underline-offset: 3px;
+  font-weight: bold;
 }
 .main_contents #container6 {
-  background-color: brown;
+  background-color: rgba(230, 223, 217, 0.9);
   margin: -253px 1050px auto;
 }
 .main_contents #container6 #title6 {
+  color: #222222;
   font-size: 25px;
   font-weight: bold;
   padding-left: 30px;
-  padding-top: 20px;
+  padding-top: 40px;
   text-align: left;
   line-height: 1.5;
 }
 .main_contents #container6 p {
+  color: #444444;
   position: relative;
-  padding-left: 30px;
-  padding-top: 20px;
-  text-align: left;
-  line-height: 1.7;
-  font-size: 15px;
-}
-.main_contents #container6 #option6 {
-  padding-top: 40px;
-  text-decoration-line: underline;
-}
-.main_contents #container7 {
-  background-color: blue;
-  margin: -253px 1350px auto;
-}
-.main_contents #container7 #title7 {
-  font-size: 25px;
-  font-weight: bold;
   padding-left: 30px;
   padding-top: 20px;
   text-align: left;
   line-height: 1.5;
+  font-size: 14px;
+}
+.main_contents #container6 #option6 {
+  font-size: 13px;
+  display: inline-block;
+  padding: -40px 10px 10px -10px;
+  text-decoration-line: underline;
+  color: #222222;
+  line-height: 50px;
+  text-underline-offset: 3px;
+  font-weight: bold;
+}
+.main_contents #container7 {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: -253px 1350px auto;
+}
+.main_contents #container7 #title7 {
+  color: #222222;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-top: 40px;
+  text-align: left;
+  line-height: 1.5;
 }
 .main_contents #container7 p {
+  color: #444444;
   position: relative;
   padding-left: 30px;
   padding-top: 20px;
   text-align: left;
-  line-height: 1.7;
-  font-size: 15px;
+  line-height: 1.5;
+  font-size: 14px;
 }
 .main_contents #container7 #option7 {
-  padding-top: 40px;
+  font-size: 13px;
+  display: inline-block;
+  padding: -40px 10px 10px -10px;
   text-decoration-line: underline;
+  color: #222222;
+  line-height: 50px;
+  text-underline-offset: 3px;
+  font-weight: bold;
 }
 .footer {
   width: 750px;
@@ -290,6 +343,7 @@ body {
   left: 400px;
 }
 #copyright {
+  color: #b5b4b4;
   font-size: 12px;
   line-height: 16px;
   position: relative;
@@ -305,17 +359,20 @@ body {
   background: #f1f2f2;
   overflow: hidden;
 }
+
 .footer_main #footer_menu li {
   font-size: 15px;
   font-weight: 600;
   float: left;
   overflow: hidden;
-  margin: 40px 0 0 40px;
+  margin: 40px -20px 0 40px;
 }
 .footer_main #footer_menu p {
   overflow: hidden;
   float: left;
-  margin: 40px -20px 0 20px;
+  margin: 40px -30px 0 30px;
+}
+.footer_main .footer_login {
 }
 .footer_main #go_login {
   width: 130px;
@@ -331,16 +388,23 @@ body {
   text-align: center;
 }
 .footer_main #center {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
-  margin: 80px 0 -18px 40px;
+  margin: 80px 0 -18px 38px;
+  color: #666666;
+}
+.footer_main #phone_image {
+  position: absolute;
+  left: 53px;
+  top: 41px;
 }
 .footer_main #tell {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
-  margin: 0 0 -18px 120px;
+  margin: 0 0 -18px 121px;
   line-height: 22px;
   float: left;
+  color: #666666;
 }
 .footer_main #time {
   font-size: 12px;
@@ -348,6 +412,7 @@ body {
   margin: 0px 0 0 10px;
   line-height: 22px;
   display: inline-block;
+  color: #666666;
 }
 #address {
   font-size: 12px;
@@ -359,6 +424,7 @@ body {
 #address li {
   float: left;
   list-style: none;
+  color: #666666;
 }
 #address p {
   float: left;
