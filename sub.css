@@ -513,3 +513,7 @@ input {
   position: relative;
   font-weight: lighter;
 }
+::selection {
+  background: #983b43;
+  color: #ffffff;
+}
