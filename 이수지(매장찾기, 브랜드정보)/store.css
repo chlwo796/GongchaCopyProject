@@ -113,7 +113,7 @@ body{
     width: 120px;
 }
 /* 공지사항 마우스 오버 시 컬러변경 */
-p:hover{
+#공지사항.p:hover{
     color: red;
 }
 
@@ -227,7 +227,7 @@ nav > ul > li ul {width: 100%;} */
     padding: 0 0 0 20px;
     box-sizing: border-box;
     position: absolute;
-    top: 31.5%;
+    top: 27%;
     right:15%;
     /* bottom: -18px; */
     z-index: 9;
@@ -238,29 +238,174 @@ nav > ul > li ul {width: 100%;} */
 .subtab .tablist .list1{
     z-index: 9;
     position: absolute;
-    top: 32.25%;
-    right:31.5%;
+    top: 27.7%;
+    right:31%;
 }
 
 .subtab .tablist .list2{
     z-index: 9;
     position: absolute;
-    top:32.25%;
-    right:30.5%;
+    top:27.7%;
+    right:30%;
     font-size: 15px;
     
 }
 .subtab .tablist .list3{
     z-index: 9;
     position: absolute;
-    top: 32.25%;
-    right:27%;
+    top: 27.7%;
+    right:26%;
     font-size: 14px;
     font-weight: bold;
     color: #f1f2f2;
 }
 /* ------------------------------------------- */
 
+/* 검색박스 */
+.box{
+    padding: 20px;
+    width: 1200px;
+    left: 20%;
+    top: 50px;
+    background: #f3f4f7;
+    
+    position: relative;
+  
+    display: flex;
+    height: 40px;
+    padding-left: 1%;
+
+}
+
+.selectbox{
+    width: 250px;
+    height: 45px;
+    /* margin: 10px 100px 5px 10px; */
+    /* border-radius: 8px; */
+   margin-left: 15px;
+   /* margin-top: 2px; */
+    /* float: left; */
+    font-weight: 200;
+    font-size: 16px;
+    background: #ffffff;
+    color: #666666;
+
+  
+}
+
+.inputbox{
+    position: relative;
+
+/* float: right; */
+/* right: 100px; */
+     width: 590px;
+    height: 40px;
+    margin-left: 20px;
+    /* margin: 5px 30px 5px 10px; */
+    /* border-radius: 8px; */
+    /* margin-left: 100px;
+    margin-top: 15px; */
+    
+    font-size: 15px;
+    
+    
+}
+input:focus{outline: none;}
+
+
+
+
+
+/* 매장 리스트 */
+
+.list{
+    float: left;
+    width: 16%;
+   margin-top: 4%;
+   margin-left: 20%;
+   overflow: scroll;
+   height: 520px;
+   padding-right: 3px;
+   padding-bottom: 100px;
+   font-weight: 200;
+   background-color: #f3f4f7;
+     /* max-width: 300px; */
+     
+     
+ }
+
+ /* 아래의 모든 코드는 영역::코드로 사용 */
+ .list::-webkit-scrollbar {
+ width: 5px;  /* 스크롤바의 너비 */
+ padding-right: 5px;
+ }
+ 
+ .list::-webkit-scrollbar-thumb {
+ height: 5%; /* 스크롤바의 길이 */
+ background: #a19f9f; /* 스크롤바의 색상 */
+ 
+ border-radius: 10px;
+ }
+ 
+ .list::-webkit-scrollbar-track {
+ background: #bbb;  /*스크롤바 뒷 배경 색상*/
+ }
+ .list button {
+ border: 1px solid rgb(219, 215, 215);
+ background-color: rgba(0, 0, 0, 0);
+ color: black;
+ 
+ /* padding: 5px; */
+ 
+ width: 100%;
+ height: 130px;
+ }
+ 
+ .list button:focus {
+ color: black;
+ background-color: #a19f9f;
+ }
+ .store{
+     display: block;
+     font-weight: 700;
+     font-size: 16px;
+     color: #222222;
+     margin: 0 0 12px;
+    
+     
+ }  
+ .placeAddress{
+    display: block;
+    height: 40px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
+    overflow: hidden;
+    text-align: left;
+ }
+ .storebutton{
+    display: block;
+    height: 123px;
+    padding: 28px 20px;
+    box-sizing: border-box;
+    text-align: left
+    
+    
+ }
+ 
+ 
+
+
+/* 지도 */
+.map{
+    float: right;
+    /* height: 600px; */
+    /* margin-right: 1%; */
+    /* margin-top: 10%; */
+    
+   
+  
+}
 
 
 
@@ -271,6 +416,46 @@ nav > ul > li ul {width: 100%;} */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 우측고정탭 */
+#float { 
+    position:fixed; _position:absolute; _z-index:-1;
+    width:170px;
+    overflow:hidden;
+    right: -22px;
+    top:144px; 
+    background-color: transparent;
+    margin:0;
+    padding:0;
+}
+/* 
 
 /* 하단푸퍼 */
 /* footer position을 absolute로 했기 때문에 다른 영역과 겹칠 수 있음
@@ -315,10 +500,13 @@ bottom: 7%;
     right: 17.5%;
     bottom: 55%;
     font-weight: 700;
+    line-height: 50px;
 }
 /* 회사소개|제휴 등등 */
 .ft_menu li {
     margin: 0 0 0 41px;
+   
+
     float: left;
     position: relative;
     font-size: 15px;
@@ -331,19 +519,19 @@ bottom: 7%;
 
 .center div{
     position: absolute;
-    right: 56.5%;
+    right: 56.8%;
     bottom: 40%;
     font-weight: 500; 
 }
 .time{
     position: absolute;
-    right: 27%;
+    right: 27.5%;
     bottom: 30%;
     font-size: 14px;
 }
 .address{
     position: absolute;
-    right: 21%;
+    right: 21.5%;
     bottom: 14%;
     font-size: 14px;
 }
