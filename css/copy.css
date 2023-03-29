@@ -45,6 +45,7 @@ body {
   color: #444444;
 }
 .header ul li {
+  display: none;
   font-size: 15px;
   line-height: 35px;
   width: 100%;
