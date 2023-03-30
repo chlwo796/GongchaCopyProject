@@ -46,7 +46,6 @@ body {
   color: #444444;
 }
 .header ul li {
-  display: none;
   font-size: 15px;
   line-height: 35px;
   width: 100%;
@@ -56,6 +55,19 @@ body {
   position: absolute;
   top: 110px;
   left: 0;
+}
+.header ul:hover li {
+  display: block;
+  font-size: 15px;
+  line-height: 35px;
+  width: 100%;
+  height: 264px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  z-index: 100;
 }
 .header #menu4 {
   color: #c30e2e;
@@ -425,4 +437,5 @@ body {
 #address p {
   float: left;
   margin: 0 11px 0 11px;
+  color: #666666;
 }
