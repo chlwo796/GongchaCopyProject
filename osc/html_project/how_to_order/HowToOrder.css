@@ -12,96 +12,305 @@
 } /* 폰트들 링크 걸고 이름 임의로 정의*/
 
 body {
+  /* 전체 기본 글씨체 설정*/
   font-family: gothic400;
-} /* 전체 기본 글씨체 설정*/
+}
 li {
+  /* li태그 전체 점 빼기*/
   list-style: none;
-} /* li태그 전체 점 빼기*/
+}
+
 #header {
   width: 100%;
+  height: 110px;
+  top: 0px;
+  left: 0px;
   position: fixed; /*헤더 위치 고정*/
-  margin: 0;
+  border-bottom: 1px solid #eeeeee; /*박스아래 경계*/
+  background: url(view/img/button/header_bg.png);
+  z-index: 1000; /* HowToOrder이랑 안겹치게 만들어야함 */
+}
+#header_inner {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 15px;
+  box-sizing: border-box;
+  position: relative;
+  /*부모요소 table*/
+  display: table;
+}
+.header_inner li {
+  /*한 줄로 들여쓰기*/
   float: left;
-  background-color: #ffffff;
-  z-index: 2; /* HowToOrder이랑 안겹치게 만들어야함 */
 }
 .header_logo,
 .header_text,
 .header_sns {
-  display: inline-block;
-} /* 한 줄로 들여쓰기*/
-
-.HowToOrder_text {
-  font-family: gothic700;
-  padding-top: 100px;
-  padding-left: 18%;
-  position: absolute; /*자식 요소*/
-  z-index: 1; /*우선 순위*/
+  /* 자식요소 상하 중앙정렬*/
+  display: table-cell;
+  vertical-align: middle;
 }
-.HowToOrder_text .title {
-  font-size: 42px;
-  color: #ffffff;
-  margin-bottom: 8px;
+.header_logo {
+  position: relative;
 }
-.HowToOrder_text .exp {
+.text,
+.notice {
+  /*header-텍스트들 간격 조절*/
+  margin-left: 35px;
+}
+.header_sns ul a {
+  margin-left: 15px;
+} /*heade-sns들 간격 조절*/
+.header_text,
+.header_sns {
+  position: relative;
+} /*위치조절*/
+.text {
   font-size: 17px;
-  color: #ffffff;
+}
+.notice {
+  font-size: 13px;
+}
+.header_sns {
+  left: -60px;
+}
+
+#HowToOrder {
+  width: 100%;
+  height: 264px;
+  padding-top: 100px;
+  overflow: hidden;
 }
 .HowToOrder_img {
-  position: relative; /*부모 요소*/
-  display: flex; /*이미지 중앙정렬 1*/
-  justify-content: center; /*이미지 중앙정렬 2*/
-  overflow: hidden; /*화면에 넘치는부분 가리기*/
+  object-fit: cover;
+  width: 100%;
+  height: 264px;
+}
+.order_text {
+  padding-left: 350px;
+  color: #ffffff;
+  font-family: gothic700;
+}
+.order_title {
+  font-size: 42px;
+  position: absolute;
+  padding-top: 80px;
+}
+.order_exp {
+  font-size: 17px;
+  position: absolute;
+  padding-top: 160px;
 }
 
 #FirstVisitGongcha {
   background-color: #e4dcd2;
+  width: 100%;
+  height: 506px;
+}
+.FirstVisitGongcha_img {
+  display: flex; /*중앙정렬 1*/
+  justify-content: center; /*중앙정렬 2*/
+  padding-top: 15px;
+}
+.FirstVisitGongcha_text {
+  /*텍스트 중앙정렬*/
+  text-align: center;
+  padding-top: 30px;
+}
+.first_visit_tit {
+  font-size: 26px;
+  color: #222222;
+  font-family: gothic700;
+}
+.first_visit_txt,
+.first_visit_txt2 {
+  font-size: 16px;
+  color: #666666;
+  line-height: 150%;
+}
+.first_visit_txt2 {
+  margin-top: -15px;
+  color: #983b43;
+}
+.first_visit_tit,
+.first_visit_txt,
+.first_visit_txt2,
+.FirstVisitGongcha_img {
+  animation: moveToRight 0.35s ease-in-out;
+  animation-iteration-count: 1;
+}
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+} /* 좌에서 우로 슬라이드*/
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+} /*우에서 좌로 슬라이드*/
+
+.step1 {
+  width: 100%;
+  height: 214px;
+  padding-top: 140px;
+  padding-bottom: 70px;
+  display: flex; /*중앙정렬 1*/
+  justify-content: center; /*중앙정렬 2*/
+  text-align: left;
+}
+.step,
+.title,
+.txt {
+  font-family: gothic700;
+  margin-top: -10px;
 }
 .step {
   color: #983b43;
-  margin-bottom: 5px;
-  font-family: gothic700;
   font-size: 20px;
 } /* step들 스타일 변경*/
 .title {
   color: #222222;
-  margin: 0px 0px 26px;
   font-family: gothic700;
   font-size: 42px;
 }
 .txt {
   color: #666666;
   font-size: 16px;
+  font-family: gothic400;
 }
 .step1_left,
+.step1_right,
+.step1_right li {
+  display: inline-block;
+}
+.step1_right li {
+  margin-left: 113px;
+  text-align: center;
+}
+.tea_type {
+  font-size: 18px;
+  color: #222222;
+  font-family: gothic700;
+}
+.temperature {
+  color: #666666;
+  font-size: 14px;
+  margin-top: -10px;
+}
+.step1_left {
+  animation: moveToRight 0.35s ease-in-out;
+  animation-iteration-count: 1;
+}
 .step1_right {
-  display: inline-block;
+  animation: moveToLeft 0.35s ease;
+  animation-iteration-count: 1;
 }
 
-.step2_left,
+#step2 {
+  width: 100%;
+  height: 638px;
+  background-color: #f0edeb;
+  display: flex; /*중앙정렬 1*/
+  justify-content: center; /*중앙정렬 1*/
+  overflow: hidden;
+}
+.step2_inner {
+  width: 1300px;
+  position: absolute;
+}
+.step2_left {
+  margin-left: 30px;
+  animation: moveToRight 0.35s ease-in-out;
+  animation-iteration-count: 1;
+}
 .step2_right {
+  animation: moveToLeft 0.35s ease;
+  animation-iteration-count: 1;
+  margin-left: 90px;
+}
+.step2_inner ul,
+.step2_right_content {
   display: inline-block;
 }
-
-.step2 {
-  position: relative; /*부모 요소*/
-  display: flex; /*이미지 중앙정렬 1*/
-  justify-content: center; /*이미지 중앙정렬 2*/
-  overflow: hidden; /*화면에 넘치는부분 가리기*/
+.step2_right_content {
+  background-color: #ffffff;
+  height: 240px;
+  width: 260px;
+  margin: 0px 20px 20px 0px;
+  text-align: center;
 }
-.step2_content {
-  position: absolute; /*자식 요소*/
-  z-index: 1; /*우선 순위*/
+.step2_kor {
+  font-size: 18px;
+  font-family: gothic700;
+}
+.step2_eng,
+.step2_exp {
+  font-size: 16px;
+  color: #666666;
 }
 
+#step3 {
+  width: 100%;
+  height: 429px;
+  display: flex; /*중앙정렬 1*/
+  justify-content: center; /*중앙정렬 1*/
+}
+.step3 {
+  width: 1200px;
+  padding: 40px 0px 0px;
+}
 .step3_left,
 .step3_right {
   display: inline-block;
 }
+.step3_right {
+  padding-left: 50px;
+  font-size: 18px;
+  font-family: gothic700;
+}
 
-.footer_left,
-.footer_right,
-.footer_logo,
+.step3_right p img {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+.step3_left {
+  animation: moveToRight 0.35s ease-in-out;
+  animation-iteration-count: 1;
+}
+.step3_right {
+  animation: moveToLeft 0.35s ease;
+  animation-iteration-count: 1;
+}
+
+#footer {
+  width: 100%;
+  height: 166px;
+  background-color: #f1f2f2;
+}
+.footer_left {
+  padding: 20px 0px 10px 100px;
+  background-color: #575757;
+  height: 100%;
+  width: 130%;
+}
+.footer_right {
+  margin: 0 0 0 250px;
+  height: 100%;
+  width: 100%;
+}
 .copyright {
+  font-size: 12px;
+  color: #b5b4b4;
+}
+.footer_ul {
   display: inline-block;
+  margin: 0;
+  padding: 0;
 }
