@@ -42,6 +42,9 @@ body {
   font-weight: 600;
   /* color: #444444; */
 }
+.header ul ::before {
+  display: none;
+}
 .header ul :hover {
   border-bottom: 3px solid #cf3e58;
 }
