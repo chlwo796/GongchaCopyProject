@@ -113,7 +113,7 @@ body{
     width: 120px;
 }
 /* 공지사항 마우스 오버 시 컬러변경 */
-#공지사항.p:hover{
+.red:hover{
     color: red;
 }
 
