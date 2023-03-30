@@ -31,6 +31,7 @@ body {
   float: left;
   margin-top: 45px;
   margin-left: 120px;
+  margin-bottom: 40px;
 }
 .header #logo {
   margin-top: 20px;
@@ -40,6 +41,9 @@ body {
   text-align: center;
   font-weight: 600;
   /* color: #444444; */
+}
+.header ul :hover {
+  border-bottom: 3px solid #cf3e58;
 }
 .header ul a {
   color: #444444;
