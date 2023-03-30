@@ -42,12 +42,6 @@ body {
   font-weight: 600;
   /* color: #444444; */
 }
-.header ul ::before {
-  display: none;
-}
-.header ul :hover {
-  border-bottom: 3px solid #cf3e58;
-}
 .header ul a {
   color: #444444;
 }
@@ -62,14 +56,6 @@ body {
   position: absolute;
   top: 110px;
   left: 0;
-  transform: scaleX(0);
-  transition: transform 0.3s, bottom 0s 0.3s;
-  background: #cf3e58;
-}
-.header.on {
-  transform: scaleX(1);
-  bottom: 0;
-  transition: transform 0.3s, bottom 0s, 0.3s;
 }
 .header #menu4 {
   color: #c30e2e;
