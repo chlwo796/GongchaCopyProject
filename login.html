@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>로그인페이지</title>
+    <title>로그인 페이지</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -22,12 +22,7 @@
         가맹점의 아이디와 비밀번호로 로그인 후 이용 가능합니다.
       </p>
     </div>
-    <form
-      id="loginform"
-      name="loginform"
-      method="post"
-      action="/franchise/store/proc.login.php"
-    >
+    <form id="loginform" name="loginform" method="post" action="./main.html">
       <div class="login_main">
         <input
           type="text"
@@ -41,7 +36,7 @@
           id="password"
           placeholder="가맹점주 비밀번호"
         /><br />
-        <input type="submit" value="로그인" class="submit" />
+        <input type="submit" id="submit" value="로그인" class="submit" />
       </div>
       <br />
 
@@ -49,16 +44,15 @@
         <div class="login_option">
           <label class="check"
             ><input type="checkbox" name="saveid" id="saveid" value="Y" />아이디
-            저장</label
-          >
+            저장<span class="on"></span
+          ></label>
           <label class="check"
             ><input
               type="checkbox"
               name="autoflag"
               id="autoflag"
-              value="Y"
-            />자동 로그인</label
-          >
+              value="Y" />자동 로그인<span class="on"></span
+          ></label>
         </div>
       </div>
     </form>
@@ -66,5 +60,5 @@
       ※아이디 또는 비밀번호를 잊어버린 경우 담당 SV에게 문의 주시기 바랍니다.
     </p>
   </body>
-  <script src="main.js"></script>
+  <script src="./js/login.js"></script>
 </html>

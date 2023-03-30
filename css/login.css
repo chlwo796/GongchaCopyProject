@@ -46,8 +46,7 @@ body {
   font-size: 16px;
   padding-left: 20px;
 }
-.login_main #password {
-}
+
 .login_main .submit {
   width: 500px;
   margin: 10px 0 0 0;
@@ -57,6 +56,7 @@ body {
   font-weight: bold;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 .login_bottom {
   font-size: 16px;
@@ -65,11 +65,68 @@ body {
 .login_bottom .login_option input {
   margin: 0 5px 0 10px;
 }
-.login_bottom .login_option input[type="checkbox"] {
-  /* 체크박스 스타일설정...살려주세여.. */
-  background-color: #000000;
-}
 .text_bottom {
   font-size: 14px;
   color: #983b43;
+}
+.login_bottom .login_option {
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+  float: left;
+  margin-left: 820px;
+}
+.login_bottom .login_option .check {
+  float: left;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 20px;
+}
+/* 체크박스 수정추가 */
+/* 기본 체크박스 숨기기 */
+.login_bottom .login_option .check input[type="checkbox"] {
+  display: none;
+}
+
+/* 선택되지 않은 체크박스 스타일 꾸미기 */
+.login_bottom .login_option .check .on {
+  width: 17px;
+  height: 17px;
+  background: black;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  right: 0;
+  border-color: white;
+}
+
+/* 선택된 체크박스 스타일 꾸미기 */
+.login_bottom .login_option .check .on:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.login_bottom .login_option .check input[type="checkbox"]:checked + .on:after {
+  display: block;
+}
+.login_bottom .login_option .check .on:after {
+  /* border-color: white; */
+  width: 17px;
+  height: 17px;
+  /* border: solid #fff; */
+  /* border-width: 0 2px 2px 0; */
+  position: absolute;
+  left: 0px;
+  /* top: 50%; */
+  background: url(../images/chk.png) 0 0 no-repeat;
+  background-position-y: -17px;
+  z-index: 10;
 }
