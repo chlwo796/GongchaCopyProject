@@ -1,7 +1,7 @@
 "use strict";
 
 console.log("fighting!");
-console.log(document); // html 태그 전체를 콘솔에 띄워주자.
+console.log(document); // html 태그 전체를 콘솔에 띄워주자
 const url = window.location.href;
 console.log(url);
 const mainUrl = url.replace("login.html", "main.html");
