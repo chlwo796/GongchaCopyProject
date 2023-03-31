@@ -12,9 +12,9 @@ top1.animate(
     transform: ["translateY(-50px)", "translateY(0px)"],
   },
   {
-    duration: 300,
-    fill: "forwards",
-    easing: "ease",
+    duration: 300, // 300밀리초동안
+    fill: "forwards", // 마지막 속성값 유지
+    easing: "ease", // 변화율 = 시작과 종료를 부드럽게
   }
 );
 left1.animate(
@@ -89,19 +89,19 @@ bottom4.animate(
 );
 // 메뉴 바
 // ul에 마우스를 올리면 ul li 에 add .on
-let gnb = document.querySelectorAll(".header > ul > li");
-let gnbElement = document.querySelector(".header");
+// let gnb = document.querySelectorAll(".header > ul > li");
+// let gnbElement = document.querySelector(".header");
 
-for (let i = 0; i < gnb.length; i++) {
-  gnb[i].addEventListener("mouseover", () => {
-    gnbElement.classList.add("on");
-  });
-}
+// for (let i = 0; i < gnb.length; i++) {
+//   gnb[i].addEventListener("mouseover", () => {
+//     gnbElement.classList.add("on");
+//   });
+// }
 
-let headerElement = document.querySelector(".header");
+// let headerElement = document.querySelector(".header");
 
-headerElement.addEventListener("mouseout", (e) => {
-  if (e.target.id == "gnb") {
-    gnbElement.classList.remove("on");
-  }
-});
+// headerElement.addEventListener("mouseout", (e) => {
+//   if (e.target.id == "gnb") {
+//     gnbElement.classList.remove("on");
+//   }
+// });
