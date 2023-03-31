@@ -11,6 +11,23 @@
   src: url(view/common/font/NanumGothic-ExtraBold.ttf);
 } /* 폰트들 링크 걸고 이름 임의로 정의*/
 
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+} /* 좌에서 우로 슬라이드*/
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+} /*우에서 좌로 슬라이드*/
+
 body {
   /* 전체 기본 글씨체 설정*/
   font-family: gothic400;
@@ -150,22 +167,6 @@ li {
   animation: moveToRight 0.35s ease-in-out;
   animation-iteration-count: 1;
 }
-@keyframes moveToRight {
-  0% {
-    transform: translateX(-30px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-} /* 좌에서 우로 슬라이드*/
-@keyframes moveToLeft {
-  0% {
-    transform: translateX(30px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-} /*우에서 좌로 슬라이드*/
 
 .step1 {
   width: 100%;
