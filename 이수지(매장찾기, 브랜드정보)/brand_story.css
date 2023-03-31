@@ -1,507 +1,411 @@
- /* 메인메뉴  */
-* {
-    list-style: none;
-    text-decoration: none;
-    margin:0;
-    /* padding: 0; */
-    /* box-sizing: border-box; */
-    font-family: 'NanumGothic', 'dotum', 'Arial', 'sans-serif'; 
-    /* color: #585454;  */
-    
-} 
-#wrap{
-    min-height: 100%;
-position: relative;
-width: 100%;
-float: left;
-padding-bottom: 165px;
+ /* basic*/
+ * {
+     list-style: none;
+     text-decoration: none;
+     margin: 0;
+     font-family: 'NanumGothic', 'dotum', 'Arial', 'sans-serif';
+ }
 
-}
+ #wrap {
+     min-height: 100%;
+     position: relative;
+     width: 100%;
+     float: left;
+     padding-bottom: 165px;
+ }
+
+ html {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+ }
+
+ #mainMenu ul li a {
+     color: #585454;
+     font-weight: bold;
+     font-family: 'NanumGothic', 'dotum', 'Arial', 'sans-serif';
+ }
+
+ body {
+     width: 100%;
+     height: 100%;
+     overflow-x: hidden;
+     text-align: left;
+ }
 
 
 
-html{
-    height: 100%;
-    margin:0;
-    padding:0;
-    /* 상단 고정 메뉴바가 컨텐츠 안가리게 */
+/* header */
+ #mainMenu {
+     width: 100%;
+     height: 110px;
+     background-color: rgb(254, 254, 254);
+     position: fixed;
+     z-index: 10;
+     left: 0px;
+ }
 
+ #mainMenu ul {
+     display: inline-block;
+     margin: 20px;
+ }
+
+ #mainMenu ul li {
+     left: 98px;
+     float: left;
+     height: 100%;
+     line-height: 65px;
+     text-align: center;
+     position: relative;
+ }
+
+ #Brand {
+     top: 3px;
+     width: 100px;
+     font-size: 16px;
+     letter-spacing: 1px;      /*글자사이간격*/
+ }
+
+ #Menu {
+     top: 3px;
+     width: 113px;
+     font-size: 16px;
+     letter-spacing: 1px;
+     background-color: rgb(254, 254, 254)
+ }
+
+ #Store {
+     top: 3px;
+     width: 98px;
+     font-size: 16px;
+     letter-spacing: 1px;
+     background-color: rgb(254, 254, 254)
+ }
+
+ #Membership {
+     top: 3px;
+     font-size: 16px;
+     letter-spacing: 1px;
+     width: 160px;
+     background-color: rgb(254, 254, 254)
+ }
+
+ #Benefit {
+     top: 3px;
+     font-size: 16px;
+     width: 120px;
+     letter-spacing: 1px;
+     background-color: rgb(254, 254, 254)
+ }
+
+ #EventNews {
+     top: 3px;
+     width: 148px;
+     font-size: 16px;
+     letter-spacing: 1px;
+     background-color: rgb(254, 254, 254)
+ }
+
+ #공지사항 {
+     top: 3px;
+     font-size: 13px;
+     width: 120px;
+ }
+
+ .red:hover {
+     color: red;    /* 공지사항 마우스 오버 시 컬러변경 */
+ }
+
+ #facebook {
+     top: 7px;
+     width: 60px;
+ }
+
+ #instagram {
+     top: 7px;
+     width: 60px;
+ }
+
+ #kakao {
+     top: 7px;
+     width: 60px;
+ }
+
+
+/* main */
+
+/* 헤드 배너 : 브랜드 소개 */
+ #background_img {
+     position: relative;
+     top: 110px;
+     height: 264px
+ }  
  
-}
-
-    /* 메인 건들지마-> */
-#mainMenu ul li a{
-    color: #585454;
-    font-weight: bold;
-    font-family: 'NanumGothic', 'dotum', 'Arial', 'sans-serif'; 
-} 
-
-body{
-    width: 100%;
-    height: 100%;
-    overflow-x:hidden; /*좌우스크롤 없애기*/
-    /* margin-left: calc(-50vw + 50%);
-    margin: 0 auto; */
-    text-align: left;
-   
-}
-
-
-
-
-
-#containerWrap{
-    background: linear-gradient(#3498db 1%, #ffffff 50%);
-}
-
-
-
-
-
-
-
-
-
-
-
-#mainMenu{
-    width: 100%;
-    height: 110px;
-    background-color: rgb(254, 254, 254);
-    position: fixed;
-    z-index: 10;
-    left: 0px;
-    
-    
-}
-#mainMenu ul {
-    display: inline-block ;
-    margin: 20px ; 
-    
-    
-
-}
-#mainMenu ul li {
-    left: 98px;
-    float: left;
-    height: 100%;
-    line-height: 65px;
-    text-align: center;
-    /* background-color: rgb(254, 254, 254); */
-    position: relative;
-
-}
-#Brand{
-    top: 3px;
-    width: 100px;
-    font-size: 16px;
-    letter-spacing: 1px; /*글자사이간격*/
-}
-#Menu{
-    top: 3px;
-    width: 113px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    background-color: rgb(254, 254, 254)
-}
-#Store{
-    top: 3px;
-    width: 98px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    background-color: rgb(254, 254, 254)
-}
-#Membership{
-    top: 3px; 
-    font-size: 16px;
-    letter-spacing: 1px;
-    width: 160px;
-    background-color: rgb(254, 254, 254)
-}
-#Benefit{
-    top: 3px;
-    font-size: 16px;
-    width: 120px;
-    letter-spacing: 1px;
-    background-color: rgb(254, 254, 254)
-}
-#EventNews{
-    top: 3px;
-    width: 148px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    background-color: rgb(254, 254, 254)
-}
-#공지사항{
-    top: 3px;
-    font-size: 13px;
-    width: 120px;
-}
-/* 공지사항 마우스 오버 시 컬러변경 */
-.red:hover{
-    color: red;
-}
-
-#facebook{
-    top: 7px;
-
-    width: 60px;
-}
-#instagram{
-    
-    top: 7px;
-    width: 60px;
-}
-#kakao{
-    top: 7px;
-    width: 60px;
-}
-
-
-/* 드롭메뉴
-#mainMenu > li.a span{position: relative;}
-#mainMenu > li.a span:after{
-content: " ";
-position: absolute; left: 0; bottom: -10px;
-width: 0%;
-height: 2px;
-background: #f00;
-transition: all .5s;
-}
-#mainMenu > li:hover span:after{width: 100%;left:0;}
-nav > ul > li ul {width: 100%;} */
-
-/* 드롭메뉴
-.dropmenu{
-    width: 100%;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    top:100%;
-    z-index: 999;
-    padding-left: 180px;
-    font-size: 15px;
-    display: none;
-}
-.fullcategory{
-    float: left;
-    margin: 30px 0;
-}
-.category:nth-child(1){
-    font-weight: bold;
-}
-.category {
-    padding: 9px 0px;
-    /* width: 180px; */
-    /* margin-right: 100px; */
-
-/* .category:hover {
-    text-decoration: underline;
-} */ 
-
-
-/* <-메인 건들지마 */
-
-
-
-
-
-/* ------------------------------------------- */
-/* <!-- 헤드 배너 브랜드 소개 --> */
-#background_img{
-    position: relative;
-    top: 110px;
-    height:264px
-}
-.textOnimage1{
-    font-weight: 650;
-    font-size: 40px;
-    color: #ffffff;
-    position: absolute;
-    top: 210px;
-    left: 50%;
-    margin: 0 0 0 -600px;
-    font-style: 'NanumGothic', 'dotum', 'Arial', 'sans-serif';
-}
-.textOnimage2{
-    font-weight: 700;
-    font-size: 17px;
-    color: #ffffff;
-    position: absolute;
-    top: 270px;
-    left: 50%;
-    margin: 0 0 0 -600px;
-}
-/* ------------------------------------------- */
-
-/* <!--브랜드>브랜드소개>>   옆에 위치표시 */
-.subtab .tablist .backcolor{
-    background-color: #983b43;
-    width: 335px;
-    height: 37px;
-    padding: 0 0 0 20px;
-    box-sizing: border-box;
-    position: absolute;
-    top: 14%;
-    right:15%;
-    /* bottom: -18px; */
-    z-index: 9;
-    /* margin: 0 -600px 0 0; */
-}
-
-
-.subtab .tablist .list1{
-    z-index: 9;
-    position: absolute;
-    top: 14.4%;
-    right:31.25%;
-}
-
-.subtab .tablist .list2{
-    z-index: 9;
-    position: absolute;
-    top:14.4%;
-    right:27%;
-    font-size: 15px;
-    
-}
-.subtab .tablist .list3{
-    z-index: 9;
-    position: absolute;
-    top: 14.4%;
-    right:22.5%;
-    font-size: 14px;
-    font-weight: bold;
-    color: #f1f2f2;
-}
-
-
-
-
-
-/* ------------------------------------------- */
-
-  
-
-/* 배경색 반 나누기 */
-        
-
-
-
-/* 인포 */
-        /* 브랜드소개 스타일 */
-        .brandinfo{
-            text-align: center;
-            padding-top:70px;
-            /* padding-bottom: 10px; */
-        }
-        .inforedtext{
-            color: #983b43;
-        }
-        .headtext{
-            font-size: 26px;
-            font-weight: 700;
-            margin: 0 0 20px;
-            color: #222222;
-        }
-        .middletest{
-            color: #666666;
-            font-size: 14px;
-            
-            font-weight: 400;
-            line-height: 26px;
-            margin: 0 0 46px;
-        }
-        .infotext{
-            color: #983b43;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 1.5;
-        }
-
-
- 
-
-       /* 이미지 회전 */
-       .a{
-        width: 200px;
-            height: 200px;
-            transition: 1s;
-            filter: drop-shadow(3px 3px 3px #c8c7c7);
-    }
-    .a:hover{
-            transform: rotate( 45deg );
-        }
-
-        .circle01{
-           
-            padding-bottom: 30px;
-            padding-left: 16%;
-            left: 100px;
-        }
-        
-
-        .circle01 ul{
-            flex-wrap: wrap;
-            display: flex;
-            align-items: flex-start;
-            padding-top: 10px;
-            
-            padding-left: 30%;
-            justify-content: center;
-            width: 1100px;
-            padding-left: 4%;
-        }
-        .circle01 ul li{
-            display: inline-block;
-            position: relative;
-            padding-left: 25px;
-            padding-top: 40px;
-            margin: 30px 40px
-             30px 0;
-           text-align: center;
-           line-height: 50%;
-            
-        }
-        .circle01 ul li li{
-            padding: 19px;
-        }
-        .name{
-            padding-top: 30px;
-        font-size: 35px;
-        color: #983b43;
-       line-height: 1;
-        font-weight: 500;
-        
-           }
-           .text1{
-            padding: 28px 0;
-        font-size: 18px;
-        font-weight: 700;
-        color: #444;
-        line-height: 1;
-       
-           }
-           .text2{
-            font-size: 16px;
-        color: #666;
-        line-height: 1.625;
-       
-           }
-    
-
-
-           .bottombanner{
-            text-align: center;
-            padding-bottom: 70px;
-            padding-left: 23%;
-           }
-
-
-
-
-
-
-
-/* 우측고정탭 */
-#floatTab { 
-    position:fixed; _position:absolute; _z-index:-1;
-    width:170px;
-    overflow:hidden;
-    right: -22px;
-    top:144px; 
-    background-color: transparent;
-    margin:0;
-    padding:0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* 하단푸퍼 */
-/* footer position을 absolute로 했기 때문에 다른 영역과 겹칠 수 있음
-따라서 section(footer외의 영역)은 footer의 height값만큼 padding값을 주어 section의 content영역을
-footer와 겹치지 않게 만든다 */
-/* section{
-    padding-bottom: 80px;
-} */
-
-/* footer 배경색 반반 */
-.footer{
-    background-image: linear-gradient(to right,#575757 30%, #f1f2f2 20%);
-    width: 100%;
-    height: 165px;
-    bottom: 0px;
-    position: absolute;
-    
-}
-#footer_left{
-display: flex;
-}
-.logo{
-padding-left: 14%;
-position: absolute;
-bottom: 7%;
-}
-.copyright{
-    color: #B5B4B4; 
-    font-weight: normal; 
-    font-size: 13px; 
-    position: absolute; 
-    bottom: 8%; 
-    left: 18%;
-}
-
-
-#footer_right{
-    display: flex;
-}
-.ft_menu{
-    position: absolute;
-    right: 17.5%;
-    bottom: 55%;
-    font-weight: 700;
-    line-height: 50px;
-}
-/* 회사소개|제휴 등등 */
-.ft_menu li {
-    margin: 0 0 0 41px;
-   
-
-    float: left;
-    position: relative;
-    font-size: 15px;
-    color: #444444;
-
-}
-#footer_right .ft_menu li a{
-    color: #444444;
-}
-
-.center div{
-    position: absolute;
-    right: 56.8%;
-    bottom: 40%;
-    font-weight: 500; 
-}
-.time{
-    position: absolute;
-    right: 27.5%;
-    bottom: 30%;
-    font-size: 14px;
-}
-.address{
-    position: absolute;
-    right: 21.5%;
-    bottom: 14%;
-    font-size: 14px;
-}
-
+ .textOnimage1 {
+     font-weight: 650;
+     font-size: 40px;
+     color: #ffffff;
+     position: absolute;
+     top: 210px;
+     left: 50%;
+     margin: 0 0 0 -600px;
+     font-style: 'NanumGothic', 'dotum', 'Arial', 'sans-serif';
+ }
+
+ .textOnimage2 {
+     font-weight: 700;
+     font-size: 17px;
+     color: #ffffff;
+     position: absolute;
+     top: 270px;
+     left: 50%;
+     margin: 0 0 0 -600px;
+ }
+
+
+ /* 페이지 안내 : 브랜드 > 브랜드소개 */
+ .subtab .tablist .backcolor {
+     background-color: #983b43;
+     width: 335px;
+     height: 37px;
+     padding: 0 0 0 20px;
+     box-sizing: border-box;
+     position: absolute;
+     top: 14%;
+     right: 15%;
+     z-index: 9;
+ }
+
+ .subtab .tablist .list1 {
+     z-index: 9;
+     position: absolute;
+     top: 14.4%;
+     right: 31.25%;
+ }
+
+ .subtab .tablist .list2 {
+     z-index: 9;
+     position: absolute;
+     top: 14.4%;
+     right: 27%;
+     font-size: 15px;
+ }
+
+ .subtab .tablist .list3 {
+     z-index: 9;
+     position: absolute;
+     top: 14.4%;
+     right: 22.5%;
+     font-size: 14px;
+     font-weight: bold;
+     color: #f1f2f2;
+ }
+
+
+ /* 브랜드소개 */
+ .brandinfo {
+     text-align: center;
+     padding-top: 70px;
+     /* padding-bottom: 10px; */
+ }
+
+ .inforedtext {
+     color: #983b43;
+ }
+
+ .headtext {
+     font-size: 26px;
+     font-weight: 700;
+     margin: 0 0 20px;
+     color: #222222;
+ }
+
+ .middletest {
+     color: #666666;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 26px;
+     margin: 0 0 46px;
+ }
+
+ .infotext {
+     color: #983b43;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 1.5;
+ }
+
+
+/* 원형 이미지 및 하단 문구 */
+
+ /* 이미지 회전 */
+ .a {
+     width: 200px;
+     height: 200px;
+     transition: 1s;
+     filter: drop-shadow(3px 3px 3px #c8c7c7);
+ }
+
+ .a:hover {
+     transform: rotate(45deg);
+ }
+
+/* 문구 스타일 */
+ .circle01 {
+     padding-bottom: 30px;
+     padding-left: 16%;
+     left: 100px;
+ }
+
+ .circle01 ul {
+     flex-wrap: wrap;
+     display: flex;
+     align-items: flex-start;
+     padding-top: 10px;
+     padding-left: 30%;
+     justify-content: center;
+     width: 1100px;
+     padding-left: 4%;
+ }
+
+ .circle01 ul li {
+     display: inline-block;
+     position: relative;
+     padding-left: 25px;
+     padding-top: 40px;
+     margin: 30px 40px 30px 0;
+     text-align: center;
+     line-height: 50%;
+ }
+
+ .circle01 ul li li {
+     padding: 19px;
+ }
+
+ .name {
+     padding-top: 30px;
+     font-size: 35px;
+     color: #983b43;
+     line-height: 1;
+     font-weight: 500;
+ }
+
+ .text1 {
+     padding: 28px 0;
+     font-size: 18px;
+     font-weight: 700;
+     color: #444;
+     line-height: 1;
+ }
+
+ .text2 {
+     font-size: 16px;
+     color: #666;
+     line-height: 1.625;
+ }
+
+ .bottombanner {
+     text-align: center;
+     padding-bottom: 70px;
+     padding-left: 23%;
+ }
+
+
+ /* 우측 고정탭 */
+ #floatTab {
+     position: fixed;
+     _position: absolute;
+     _z-index: -1;
+     width: 170px;
+     overflow: hidden;
+     right: -22px;
+     top: 144px;
+     background-color: transparent;
+     margin: 0;
+     padding: 0;
+ }
+
+
+
+ /* footer */
+
+ /* footer 배경색 반반 */
+ .footer {
+     background-image: linear-gradient(to right, #575757 30%, #f1f2f2 20%);
+     width: 100%;
+     height: 165px;
+     bottom: 0px;
+     position: absolute;
+ }
+
+/* 로고 등 왼쪽 내용 */
+ #footer_left {
+     display: flex;
+ }
+
+ .logo {
+     padding-left: 14%;
+     position: absolute;
+     bottom: 7%;
+ }
+
+ .copyright {
+     color: #B5B4B4;
+     font-weight: normal;
+     font-size: 13px;
+     position: absolute;
+     bottom: 8%;
+     left: 18%;
+ }
+
+ /* 회사소개 | 제휴 등 오른쪽 내용 */
+ #footer_right {
+     display: flex;
+ }
+
+ .ft_menu {
+     position: absolute;
+     right: 17.5%;
+     bottom: 55%;
+     font-weight: 700;
+     line-height: 50px;
+ }
+
+ .ft_menu li {
+     margin: 0 0 0 41px;
+     float: left;
+     position: relative;
+     font-size: 15px;
+     color: #444444;
+ }
+
+ #footer_right .ft_menu li a {
+     color: #444444;
+ }
+
+ .center div {
+     position: absolute;
+     right: 56.8%;
+     bottom: 40%;
+     font-weight: 500;
+ }
+
+ .time {
+     position: absolute;
+     right: 27.5%;
+     bottom: 30%;
+     font-size: 14px;
+ }
+
+ .address {
+     position: absolute;
+     right: 21.5%;
+     bottom: 14%;
+     font-size: 14px;
+ }
+
+/* 드래그 색상 변경 */
+ ::selection {
+     background: #983b43;
+     color: #ffffff;
+ }
