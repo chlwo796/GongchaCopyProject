@@ -202,6 +202,26 @@ nav > ul > li ul {width: 100%;} */
 .button-list {
   text-align: center;
 }
+.button-list .button-left {
+  position: absolute;
+  top: 500px;
+  left: 350px;
+  width: 27px;
+  height: 53px;
+  background: url(./공차_files/prev.png) 0 0 no-repeat;
+  cursor: pointer;
+  border: none;
+}
+.button-list .button-right {
+  position: absolute;
+  top: 500px;
+  left: 1600px;
+  width: 27px;
+  height: 53px;
+  background: url(./공차_files/next.png) 0 0 no-repeat;
+  cursor: pointer;
+  border: none;
+}
 /* 우측고정탭 */
 #float {
   position: fixed;
