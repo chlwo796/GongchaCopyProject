@@ -19,7 +19,18 @@ li {
   /* li태그 전체 점 빼기*/
   list-style: none;
 }
-
+#float {
+  position: fixed;
+  _position: absolute;
+  _z-index: -1;
+  width: 170px;
+  overflow: hidden;
+  right: -22px;
+  top: 144px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
 #header {
   width: 100%;
   height: 110px;

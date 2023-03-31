@@ -5,10 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>공차</title>
+    <!-- 상단탭 아이콘 -->
+
+    <link rel="icon" href="../../../공차_files/favicon.ico" />
     <link rel="stylesheet" href="HowToOrder.css" />
   </head>
   <body>
     <div id="wrap">
+      <div id="float">
+        <ul>
+          <a href="../../../index.html" target="_blank">
+            <!-- 우측고정 탭 배너 마우스오버 기능추가 -->
+            <img
+              src="../how_to_order/view/img/button/quick_img_on.png"
+              onmouseover="this.src='../how_to_order/view/img/button/quick_img_on.png'"
+              onmouseout="this.src='../how_to_order/view/img/button/quick_img_off.png'"
+            />
+          </a>
+        </ul>
+      </div>
+
       <div id="header">
         <ul id="header_inner">
           <li class="header_logo">
@@ -43,7 +59,7 @@
             <a class="text" href="#">Event&News</a>
           </li>
           <li class="header_text">
-            <a class="notice" href="#">공지사항</a>
+            <a class="notice" href="../../../sub.html">공지사항</a>
           </li>
           <li class="header_sns">
             <ul>
@@ -242,7 +258,9 @@
         <ul class="footer_ul">
           <div class="footer_left">
             <div class="footer_logo">
-              <img src="view/img/button/ft_logo.png" alt="" />
+              <a href="../../../main.html">
+                <img src="view/img/button/ft_logo.png" alt="" />
+              </a>
             </div>
             <p class="copyright">
               (C)GONGCHA KOREA CO.LTD <br />
