@@ -76,7 +76,7 @@ window.initMap = function () {
   
   //(4) 마커 움직일 때마다 허허벌판 쳐내기
   //(4-1) 
-  const bounds = new google.maps.LatLngBounds();
+  const bounds = new google.maps.LatLngBounds();  
   
 
   //(5) 정보창
