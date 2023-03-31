@@ -28,7 +28,7 @@ li {
   position: fixed; /*헤더 위치 고정*/
   border-bottom: 1px solid #eeeeee; /*박스아래 경계*/
   background: url(view/img/button/header_bg.png);
-  z-index: 1000; /* HowToOrder이랑 안겹치게 만들어야함 */
+  z-index: 1000; /* 가장 앞으로! */
 }
 #header_inner {
   width: 1200px;
